@@ -18,6 +18,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
     //TODO 如果需求变动，布局的位置发生改变，变动是否很大的问题
     //TODO 如何停止自动播放
+    //TODO 设置Banner的点击事件
     private static final String TAG = "MainActivity111";
     private MultiAdapter multiAdapter;
     @Override
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
                      HomeEntity homeEntity = gson.fromJson(response.body(), HomeEntity.class);
                      Log.d(TAG, homeEntity.toString());
                      multiAdapter.add(0,homeEntity.getFocusImages());
+                     multiAdapter.add(1,homeEntity.getDiscoveryColumns());
+                     multiAdapter.add(2,homeEntity.getEditorRecommendAlbums());
+                     multiAdapter.add(3,homeEntity.getSpecialColumn());
                  }
              });
     }

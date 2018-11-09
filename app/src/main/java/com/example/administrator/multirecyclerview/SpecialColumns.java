@@ -41,7 +41,7 @@ public class SpecialColumns extends HomeBaseEntity{
             this.list = list;
         }
 
-        public static class SpecialColunmnEntity {
+        public static class SpecialColunmnEntity extends CommonBaseEntity{
             /**
              * columnType : 1
              * specialId : 1374

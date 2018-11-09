@@ -42,7 +42,7 @@ public class EditorRecommendAlbums extends HomeBaseEntity{
             this.list = list;
         }
 
-        public static class EditorRecommendAlbumsEntity {
+        public static class EditorRecommendAlbumsEntity extends CommonBaseEntity{
             /**
              * id : 15161417
              * albumId : 15161417
